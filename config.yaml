@@ -1,0 +1,121 @@
+baseURL: "123.249.112.14"
+languages:
+  en:
+    languageCode: "en-us"
+    weight: 1
+  zh:
+    languageCode: "zh-cn"
+    weight: 2
+title: 逐鹿痴鱼
+theme: PaperMod
+defaultContentLanguage: zh
+
+# 每页显示的文章数量
+paginate: 10
+
+# Google Analytics的跟踪ID
+googleAnalytics: "UA-123456789-1"
+
+# Disqus 评论系统的 shortname
+disqusShortname: "zhoutiaot"
+
+# 网站描述
+params:
+  # 环境设置，可以是 "development" 或 "production"
+  env: "production"
+
+  # 网站作者
+  author: "ZhouTiaoT"
+
+  # 网站描述
+  description: "通屋有径径在足下，窥玉无界界即眼前"
+
+  # 网站关键词
+  keywords: ["blog", "hugo", "papermod"]
+
+  # 自定义CSS文件路径
+  #customCSS:
+   # - "css/custom.css"
+
+  # 自定义JS文件路径
+  #customJS:
+   # - "js/custom.js"
+  profileMode:
+    enabled: true
+    title: "<Title>" # optional default will be site title
+    subtitle: "This is subtitle"
+    imageUrl: "<image link>" # optional
+    imageTitle: "<title of image as alt>" # optional
+    imageWidth: 120 # custom size
+    imageHeight: 120 # custom size
+    buttons:
+      - name: Archive
+        url: "/archive"
+      - name: Github
+        url: "https://github.com/JumpFZ"
+  # 添加社交链接
+  socialIcons:
+    - name: github
+      url: "https://github.com/JumpFZ"
+    - name: bilibili
+      url: "https://www.bilibili.com/"
+    - name: tiktok
+      url: "https://douyin.com/"
+    - name: Rss
+      url: "index.xml"
+  # 导航菜单配置
+  menu:
+    main:
+        - name: 足迹
+          url: archives
+          weight: 10
+        - name: 系列
+          url: series
+          weight: 20
+        - name: 搜索
+          url: search
+          weight: 30
+
+  # 搜索功能开关
+  search: true
+
+  # 文章目录开关
+  showtoc: true
+
+  # 文章摘要长度
+  summarylength: 70
+
+  # 显示文章的阅读时间
+  showreadingtime: true
+
+  # 显示文章的字数
+  showwordcount: true
+
+  # 显示文章最后修改时间
+  showlastmod: true
+
+  # 文章内容中的图片是否使用LazyLoad
+  imagelazyloading: true
+
+  # 文章内容中的图片是否使用LazyLoad的属性
+  imagelazyloadingattribute: "loading=lazy"
+
+  # 显示版权信息
+  copyrightsince: 2024
+
+  # 显示文章更新时间
+  lastmodenabled: true
+
+  # 添加文章分享功能
+  sharebuttons: true
+
+  # 添加评论功能
+  comments: false
+
+# 代码高亮设置
+markup:
+  highlight:
+    codeData: false
+  goldmark:
+    renderer:
+      unsafe: true
